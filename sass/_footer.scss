@@ -1,0 +1,17 @@
+.footer{
+	background-color: darken(#4D606E,10%);
+	text-align: center;
+	@extend .clearfix;
+	.gentileza{
+		@extend .col-md-6;
+		color: #D3D4D8;
+		margin: 0;
+		padding: 0.5rem 0rem;
+		&:first-of-type{
+			padding-bottom: 0rem;
+		}
+		.link-footer{
+			color: #3FBAC2;
+		}
+	}
+}

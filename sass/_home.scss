@@ -1,0 +1,41 @@
+.home{
+	@extend .container-fluid;
+	background-image: url("../../dist/img/tijolos.jpg");
+	background-size: cover;
+	background-attachment: fixed;
+	height: 100%;
+	.central{
+		max-width: 100%;
+		padding-top: 2rem;
+		padding-bottom: 2rem;
+		@extend .clearfix;
+		.img-central{
+			@extend .col-xs-12;
+			text-align: center;			
+			.img{
+				max-width: 100%;
+			}
+		}
+		.span-style{
+			@extend .col-xs-12;
+			@extend .col-md-4;
+			text-align: center;
+			color: darken(#4D606E,10%);
+			font-family: 'barba';
+			font-size: 3rem;
+			color: #1b1b1b;
+			@media(min-width: map-get($grid-breakpoints,md)){
+				margin-bottom: 5rem;
+			}
+			@media(min-width: map-get($grid-breakpoints,xs)){
+				font-size: 2.3rem;
+				margin-bottom: 1rem;
+			}
+			@media(min-width: map-get($grid-breakpoints,lg)){
+				margin-bottom: 5.5rem;
+				font-size: 3rem;
+			}
+
+		}
+	}
+}

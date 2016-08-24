@@ -1,0 +1,51 @@
+.valores{
+	@extend .container-fluid;
+	background-image: url("../../dist/img/valores.jpg");
+	background-size: cover;
+	background-attachment: fixed;
+	background-color: rgba(0,0,0,1);
+	text-align: center;
+	@media(min-width: map-get($grid-breakpoints,md)){
+				text-align: left;
+			}
+	.titulo-valores{
+		color: #fefefe; 
+		padding: 1.5rem 0rem;
+		font-size: 3rem;
+		text-align: center;
+		font-family: 'titulos';
+		text-shadow: 2px 2px #000;
+	}
+	.section-valores{
+		.img-valores{
+			@extend .col-xs-12;
+			@extend .col-md-3;
+			padding-bottom: 1rem;
+			position: relative;
+			text-align: center;
+			.img-valor{				
+				width: 100%;
+				border-radius: 55%;
+				background-color: rgba(0,0,0,0.5);
+			}
+		}
+		.text-valores{
+			@extend .col-xs-12;
+			@extend .col-md-9;
+			padding: 1rem;
+			color: #f5f5f5;
+			background-color: rgba(0,0,0,0.8);
+			margin-bottom: 1rem;
+			.header-text{
+				padding-bottom: 1rem;
+			}
+			.txt{
+				@media(min-width: map-get($grid-breakpoints,lg)){				width: 70%;
+					font-size: 1.2rem;
+					width: 100%;
+					margin-right: 0;
+				}
+			}
+		}
+	}
+}

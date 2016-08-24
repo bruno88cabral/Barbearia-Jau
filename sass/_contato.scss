@@ -1,0 +1,38 @@
+.contato{
+	@extend .clearfix;
+	background-color: darken(#D3D4D8,30%);
+	padding: 0.4rem 0rem;
+	text-align: center;
+	color: #4D606E;
+	.contato-center{
+		@extend .clearfix;
+		margin: 0.4rem 0rem;
+		background-color: #D3D4D8;
+		.titulo-contato{					
+			font-size: 3rem;
+			padding: 1rem 0rem;
+			color: darken(#4D606E,15%);
+			font-family: 'titulos';
+			text-shadow: 1px 1px #000;
+		}
+		.span-contato{
+		@extend .col-xs-12;
+		@extend .col-md-6;
+		font-size: 1.3rem;
+		margin: 0.5rem 0rem;
+		}
+		.span-social{
+			@extend .col-xs-6;
+			margin-bottom: 1rem;
+			font-size: 3rem;
+		}
+	}
+}
+
+.maps{
+	height:400px;
+	width:100%;
+	-webkit-filter: grayscale(80%);
+    -o-filter: grayscale(80%);
+    filter: grayscale(80%);
+}

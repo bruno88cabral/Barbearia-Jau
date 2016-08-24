@@ -1,0 +1,75 @@
+.navbar-barber{
+	@extend .navbar;
+	@extend .navbar-light;
+	z-index: 999;
+	position: fixed;
+	width: 100%;
+	.navbar-mini{
+		@extend .navbar-toggler;
+		background-color: #4D606E;
+		color: #3FBAC2;
+		border: solid 1px #3FBAC2;
+	}
+	.nav-img{
+		float: right;	
+	}
+	.collapse-ad{
+		position: fixed;
+		top:-50%;
+		left:-50%;
+		width: 50%;
+		margin-top: 3rem;
+		@include transition(0.3s);
+		.title-nome{
+					font-size: 2rem;
+					text-align: center;
+					background-color: #3FBAC2;
+					padding: 0.5rem 0rem;
+					margin-bottom: 0;
+					color: darken(#3FBAC2,25%);
+					font-family: 'lokicola';
+				}
+		.nav-list{
+			@extend .nav;			
+			background-color: darken(#4D606E,5%);
+			
+			.list-item{
+				@extend .nav-item;
+				padding: 0.5rem 0rem 0.5rem 40%;
+				@media(min-width: map-get($grid-breakpoints,lg)){
+					padding-left: 30%;
+				}
+				font-size: 110%;
+				&:hover{
+					background-color: darken(#4D606E,15%);
+				}
+				.list-link{
+					@extend .nav-link;
+					width: 100%;
+					color: #D3D4D8;
+					font-weight: 500;
+					display: block;
+				}
+			}
+		}
+	}
+}
+.menu-open{
+	.navbar-barber{
+		.collapse-ad{
+		z-index: 99;
+		position: fixed;
+		top:-10%;
+		left:0%;
+		width: 100%;
+		@media(min-width: map-get($grid-breakpoints,md)){
+					width: 30%;
+					top:-5%;
+				}
+		@media(min-width: map-get($grid-breakpoints,lg)){
+					width: 18%;
+					top:-7%;
+				}				
+		}
+	}
+}
